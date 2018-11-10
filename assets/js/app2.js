@@ -19,7 +19,7 @@ function renderButtons(topics, gifClass, areaToAddTo) {
 
 
 $(document).on("click", ".searchButtons", function () {
-    $("#gifDump").empty();
+    // $("#gifDump").empty();
     var type = $(this).data("type");
     console.log(type);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -43,7 +43,7 @@ $(document).on("click", ".searchButtons", function () {
                 image.addClass("searchImage");
                 gifDiv.append(p);
                 gifDiv.append(image);
-                $("#gifDump").append(gifDiv);
+                $("#gifDump").prepend(gifDiv);
             }
         })
 
@@ -67,7 +67,7 @@ $("#addSearch").on("click", function () {
     topics.push(newGif);
     console.log(newGif);
     $("#topicButtons").empty();
-    renderButtons(topics, "searchButtons", "topicButtons");
+    renderButtons(topics, "searchButtons", "#topicButtons");
     return false;
     
 })
