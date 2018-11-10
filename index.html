@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>GIFTASTIC</title>
 </head>
 
 <body>
-    <div id="topicButtons">
+    <div class="button" id="topicButtons">
         <!-- topic buttons for gifs appear here -->
     </div>
 
+<div class="row">
+    <div class="col-md-7" id="gifDump"></div>
 
+    <div class="col-md-4">
     <form id="gif-form">
         <label for="gif-input" style="font-weight: bold">Add a Gif!</label>
         <br>
         <input type="text" id="gif-input">
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="button" id="addSearch">
     </form>
-    
-    <div id="gifDump"></div>
+</div>
+</div> 
 
 
 
     </div>
-    <script type="text/javascript" src="app2.js"></script>
+    <script type="text/javascript" src="assets/js/app2.js"></script>
 </body>
 
 </html>

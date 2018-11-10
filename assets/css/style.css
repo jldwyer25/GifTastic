@@ -1,0 +1,26 @@
+body{
+    background: url(../images/shattered.png);
+}
+
+#addSearch{
+    
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+    box-shadow: 3px 3px#0c0b0b ;
+    border-radius: 15px 15px 30px 5px;
+}
+
+.searchButtons{
+    
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+    box-shadow: 3px 3px#0c0b0b ;
+    height:auto;
+    display:inline-block;
+    border-radius: 15px 15px 30px 5px;
+    margin-left: 5px;
+}
+
+#gifDump{
+    margin-left:5px;
+}
