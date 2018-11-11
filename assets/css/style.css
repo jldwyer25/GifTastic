@@ -19,6 +19,7 @@ body{
     display:inline-block;
     border-radius: 15px 15px 30px 5px;
     margin-left: 5px;
+    margin-top:5px;
 }
 
 #gifDump{
